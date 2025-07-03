@@ -14,9 +14,7 @@ reverse(0, arr.length-1);        // Reverse the entire array
 
  function reverse(i, j) {
    while (i < j) {
-     let temp = arr[i];
-     arr[i] = arr[j];
-     arr[j] = temp;
+    [ arr[i] , arr[j] ] = [ arr[j] , arr[i] ];
      i++; 
      j--;
    }
